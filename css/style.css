@@ -49,6 +49,14 @@ header span {
     color: var(--cor-principal);
 }
 
+.menu-responsivo {
+    display: none;
+}
+
+.menu-responsivo i {
+    font-size: 3rem;
+}
+
 nav ul {
     display: flex;
     flex-direction: row;
@@ -125,8 +133,6 @@ article:hover {
     padding: 1rem;
 }
 
-
-
 /* ===== Rodape ===== */
 footer {
     background-color: var(--cor-05);
@@ -137,4 +143,109 @@ footer {
     width: 100%;
     bottom: 0;
     opacity: 0.6;
+}
+
+
+/* ===== Media Queries ===== */
+
+/* XS Extra Small - celular retrato (portrait) */
+@media (max-width: 576px) {
+    header {
+        padding: 1rem 2rem;
+    }
+    
+    .menu-responsivo {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    article {
+        height: auto;
+        margin: 1rem;
+    
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foto {
+        margin-right: 0;
+    }
+    
+    .foto img {
+        width: 100%;
+    }
+
+    .texto {
+        max-height: 10rem;
+        overflow: hidden;
+    }
+
+
+    /* TESTE */
+    header {
+        background-color: #ff4df9;
+    }
+}
+
+/* SM Small - celular paisagem (landscape) */
+@media (min-width: 576px) {
+    header {
+        padding: 1rem 2rem;
+    }
+
+    .menu-responsivo {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    article {
+        height: auto;
+        margin: 1rem;
+    
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foto {
+        margin-right: 0;
+    }
+    
+    .foto img {
+        width: 100%;
+    }
+
+    .texto {
+        max-height: 10rem;
+        overflow: hidden;
+    }
+
+
+    /* TESTE */
+    header {
+        background-color: #2139a7;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    header {
+        padding: 1rem 3rem;
+    }
+    
+    article {
+        margin: 3rem;
+    }
+    
+
+
+    /* TESTE */
+    header {
+        background-color: #b805b2;
+    }
 }
